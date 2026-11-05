@@ -98,3 +98,18 @@
 
 /* FIELD → OFFICE story */
 .about-page .career-timeline{grid-template-columns:repeat(2,minmax(0,1fr))}.about-page .career-node{min-height:245px}.about-page .career-copy p{font-size:14px;line-height:1.85}.about-page .career-year{font-size:11px;letter-spacing:1.2px}.about-page .about-intro h1{font-size:clamp(34px,4vw,58px)}@media(max-width:760px){.about-page .career-timeline{grid-template-columns:1fr}.about-page .career-node{min-height:auto}}
+
+/* ESTAOS: additional fifth project; responsive project grid and side status list */
+.project-card.cyan{background:radial-gradient(circle at 95% 110%,#177f89 0,transparent 52%),linear-gradient(125deg,#14353e,#10252e)}
+.project-card.cyan .project-icon,.status-icon.cyan{color:#80f0ed}
+.project-card.cyan .orb{border-color:#5adad8aa}
+.status-icon.cyan,.update-project-icon.estaos{background:#13404a;color:#78e8e5}
+.project-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.project-card{min-width:0}
+.project-card p{max-width:none}
+.project-stage{min-width:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.status-card,.activity-card{min-height:0;flex:none}
+.sidebar{align-self:stretch}
+@media(max-width:1450px){.project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1050px){.project-grid,.project-grid.roomy{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.project-grid,.project-grid.roomy{grid-template-columns:1fr}}
